@@ -16,5 +16,6 @@ if (lockfileExists('yarn.lock')) {
 } else {
   packageManager = 'npm'
 }
-
-execa(packageManager, process.argv.slice(2))
+const ps = execa(packageManager, process.argv.slice(2))
+ps.stdout?.pipe(process.stdout)
+ps.stderr?.pipe(process.stderr)

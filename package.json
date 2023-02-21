@@ -1,8 +1,9 @@
 {
   "name": "@nfinished/fck",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Never use the wrong package manager again",
   "bin": "./bin/index.js",
+  "type": "module",
   "files": [
     "bin",
     "package.json",
@@ -27,6 +28,7 @@
   "homepage": "https://github.com/Nfinished/fck#readme",
   "scripts": {
     "build": "tsc",
+    "test": "./bin/index.js -v",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
