@@ -1,6 +1,6 @@
 {
   "name": "@nfinished/fck",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Never use the wrong package manager again",
   "bin": "./bin/index.js",
   "type": "module",
